@@ -71,7 +71,7 @@ export default function Header() {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <Collapse in={checked}  {...(checked ? { timeout: 1000 } : {})} CollapsedHeight={50}>
+            <Collapse in={checked}  {...(checked ? { timeout: 1000 } : {})} collapsedheight={50}>
                 <div className={classes.container}>
                     <h1><span className={classes.color2}>Welcome To </span><br /><span className={classes.color}>HealthCare.</span></h1>
                     <IconButton>
