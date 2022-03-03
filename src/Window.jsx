@@ -4,6 +4,7 @@ import { makeStyles } from '@mui/styles';
 import image from "./Image/bg.jpg";
 import { CssBaseline } from "@mui/material";
 import Header from "./Header";
+import Items from "./Items";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,6 +23,7 @@ export default function Window() {
         <div className={classes.root}>
             <CssBaseline />
             <Header />
+            <Items/>
         </div>
 
     );

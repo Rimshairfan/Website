@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Grid from '@mui/material/Grid';
+import { Paper } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { Typography } from '@mui/material';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -15,8 +17,10 @@ import * as Yup from 'yup';
 const Login = () => {
     const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto" }
     const btnStyle = { margin: '12px 0' }
+    const history = useHistory();
 
     const formik = useFormik({
+
 
 
 
@@ -53,11 +57,8 @@ const Login = () => {
 
 
 
+
     })
-
-    const history = useHistory();
-
-
 
 
     return (
@@ -105,15 +106,17 @@ const Login = () => {
                                 label="Remember me" />
 
                         </FormGroup>
-                        <Button
-                            variant="contained"
-                            type='submit'
-                            onClick={formik.handleSubmit}
-                            name='submit'
-                            fullWidth
-                            style={btnStyle}>
-                            Sign In
-                        </Button>
+                       
+                            <Button
+                                variant="contained"
+                                type='submit'
+                                onClick={formik.handleSubmit}
+                                name='submit'
+                                fullWidth
+                                style={btnStyle}>
+                                Sign In
+                            </Button>
+                        
                     </Form>
                 )}
 

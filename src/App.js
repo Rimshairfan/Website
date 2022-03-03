@@ -10,14 +10,11 @@ import { Switch } from 'react-router-dom';
 function App(){
   return(
     <BrowserRouter>
-<Router>
-<Switch>
+    <>
 <Route  exact path="/login" component={Login}></Route>
-<Route   path="/window" component={Window}></Route>
+<Route    path="/window" component={Window}></Route>
+</>
 
-</Switch>
-
-</Router>
 </BrowserRouter>
   );
 }
