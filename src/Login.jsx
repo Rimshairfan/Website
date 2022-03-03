@@ -15,9 +15,9 @@ import * as Yup from 'yup';
 const Login = () => {
     const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto" }
     const btnStyle = { margin: '12px 0' }
-    const history = useHistory();
 
     const formik = useFormik({
+
 
 
         initialValues: {
@@ -54,6 +54,9 @@ const Login = () => {
 
 
     })
+
+    const history = useHistory();
+
 
 
 
