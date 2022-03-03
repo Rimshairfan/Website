@@ -15,7 +15,7 @@ import * as Yup from 'yup';
 const Login = () => {
     const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto" }
     const btnStyle = { margin: '12px 0' }
-    // const history = useHistory();
+    const history = useHistory();
 
     const formik = useFormik({
 
@@ -33,6 +33,7 @@ const Login = () => {
 
         onSubmit: (values) => {
             console.log(values);
+            history.push("/Window");
             axios.post('https://dev.muawin.com:9000/LoginWithUsername', null, {
                 params: {
                     username: values.username,
