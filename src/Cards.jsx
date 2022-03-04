@@ -5,31 +5,28 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
 import { Box, flexbox } from '@mui/system';
+import { Container, Grid } from '@mui/material';
+const useStyles = makeStyles((theme) =>({
+root:{
+  width:'100vw',
+  height:'100vh',
+}
 
-const useStyles = makeStyles({
-
-  title: {
-    fontFamily: 'Nunito',
-    fontWeight: 'bold',
-    fontSize: '7rem '
-  },
-  root: {
-
-    background: 'rgba(0,0,0,0.5)'
-  }
-});
+}));
 export default function Cards() {
   const classes = useStyles();
 
   return (
-    <>
-<Box>
-      <Card sx={{ maxWidth: 445 }} padding-left='10px'
+    <Container className={classes.root}>
+    <Grid container spacing={1}>
+
+   <grid item sm={3}>
+      <Card sx={{ maxWidth: 290 }}
       >
         <CardMedia
 
           component="img"
-          height="245"
+          height="227"
           image={require('./Image/breakfast.jpg')}
         />
         <CardContent>
@@ -43,23 +40,21 @@ export default function Cards() {
             BreakFast
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Breakfast is the first meal of the day eaten after waking from the night's sleep, in the morning. The word in English refers to breaking the fasting period of the previous night.
+            Breakfast is the first meal of the day eaten after waking from the night's sleep, in the morning. The word in English refers to breaking .
           </Typography>
         </CardContent>
 
       </Card>
-      <br></br>
-      <div align='center'   
-
-   >
-        <Card sx={{ maxWidth: 445 }} margin=' 0 auto'
-          float=' none'
-          margin-left='10px'
+      </grid>
+    
+   <Grid item sm={3}>
+        <Card sx={{ maxWidth: 445 }} 
+          
         >
           <CardMedia
 
             component="img"
-            height="245"
+            height="229"
             image={require('./Image/lunch.jpg')}
           />
           <CardContent >
@@ -72,21 +67,21 @@ export default function Cards() {
               Lunch
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lunch, the most informal and unassuming of meals, defies easy definition. A relatively late entry into the cycle of dining, it is replete with socioeconomic forms and meanings.
+              Lunch, the most informal and unassuming of meals, defies easy definition. A relatively late entry into the cycle of dining.
             </Typography>
           </CardContent>
 
         </Card>
-      </div>
+        </Grid>
       <br></br>
-      <div align='right'>
+      <Grid item sm={3}>
         <Card sx={{ maxWidth: 445 }}
 
         >
           <CardMedia
 
             component="img"
-            height="245"
+             height="229"
             image={require('./Image/dinner.jpg')}
           />
           <CardContent>
@@ -104,9 +99,10 @@ export default function Cards() {
           </CardContent>
 
         </Card>
-      </div>
-      </Box>
-    </>
+        </Grid>
+      
+      </Grid>
+      </Container>
 
 
 

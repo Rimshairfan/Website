@@ -3,8 +3,8 @@ import { makeStyles } from '@mui/styles';
 // import { bgcolor } from "@mui/system";
 import image from "./Image/bg.jpg";
 import { CssBaseline } from "@mui/material";
-import Header from "./Header";
-import Items from "./Items";
+import Navbar from "./Navbar";
+import  Menu from "./Menu";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,9 +22,7 @@ export default function Window() {
     return (
         <div className={classes.root}>
             <CssBaseline />
-            <Header />
-            <Items/>
-        </div>
+                 </div>
 
     );
 
