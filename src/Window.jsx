@@ -8,7 +8,7 @@ import  Menu from "./Menu";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        minHeight: '200vh',
+        minHeight: '60vh',
         backgroundImage: `url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
