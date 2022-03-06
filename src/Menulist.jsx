@@ -11,36 +11,49 @@ export const MenuList = [
   {
     name: "Fish",
     image: item1,
-    Calories:"1040 kcal"
+    Calories:"1040 kcal",
+    Protein:"43g",
+    Fat:"10g"
+
 
   },
   {
     name: "Chicken",
     image: item2,
-    Calories:"1030 kcal"
+    Calories:"1030 kcal",
+    Protein:"43g",
+    Fat:"10g"
 
   },
   {
     name: "Mushroom bucatini",
     image: item3,
-    Calories:"1020 kcal"
+    Calories:"1020 kcal",
+    Protein:"43g",
+    Fat:"10g"
 
   },
   {
     name: "Mix Fruits Honey",
     image: item4,
-    Calories:"1010 kcal"
+    Calories:"1010 kcal",
+    Protein:"43g",
+    Fat:"10g"
 
   },
   {
     name: "Greek green salad",
     image: item5,
-    Calories:"1000 kcal"
+    Calories:"1000 kcal",
+    Protein:"43g",
+    Fat:"10g"
 
   },
   {
     name: "Lemon corns",
     image: item6,
-    Calories:"1030 kcal"
+    Calories:"1030 kcal",
+    Protein:"43g",
+    Fat:"10g"
   }
 ];

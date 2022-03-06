@@ -15,14 +15,13 @@ import Plan from './Plan';
 function App(){
   return(
     <BrowserRouter>
+    {/* <Route  exact path="/login" component={Login}></Route> */}
     <>
-{/* <Route  exact path="/login" component={Login}></Route> */}
 <Navbar/>
 <Route    path="/window" component={Window}></Route>
 <Route    path="/menu" component={Menu}></Route>
 <Route    path="/plan" component={Plan}></Route>
 <Route    path="/contact" component={Contact}></Route>
-
 <Footer/>
 </>
 
