@@ -14,8 +14,11 @@ function Plan() {
             </li>
           })}
         </ul>
+        <div className='content'>
+          hello content
+      </div>
        </div>
-      
+     
        </>
   )
 }
