@@ -15,9 +15,10 @@ import Plan from './Plan';
 function App(){
   return(
     <BrowserRouter>
-    {/* <Route  exact path="/login" component={Login}></Route> */}
+    
     <>
 <Navbar/>
+<Route  exact path="/login" component={Login}></Route>
 <Route    path="/window" component={Window}></Route>
 <Route    path="/menu" component={Menu}></Route>
 <Route    path="/plan" component={Plan}></Route>

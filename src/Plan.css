@@ -1,24 +1,19 @@
-.maindiv{
 
-padding: 0%;
-margin: 0%;
-background-color: aqua;
-margin-top:0px;
+.area{
+    background-color: aqua;
 
 }
-.plan{
-    margin-top: 0%;
+
+.sidebar{
+    
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 80vh;
     width: 250px;
     background-color: #2F4050;
-    
-}
-.sidebar{
-   height: auto;
+   height: 100;
    padding: 0;
-   width: 100px;
+   
 }
 .sidebar .row{
 
@@ -32,7 +27,7 @@ margin-top:0px;
     color: aliceblue;
     justify-content: center;
     align-self: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nunito';
 }
 .sidebar .row:hover{
     cursor: pointer;
