@@ -7,6 +7,11 @@
     flex-direction: column;
   }
   
+  .menu .menuTitle h1{
+
+    font-family: Nunito;
+margin-left: 450px;
+  }
   .menu .menuTitle {
     /* font-family: cursive; */
     font-size: 15px;

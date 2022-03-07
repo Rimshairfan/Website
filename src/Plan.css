@@ -1,0 +1,44 @@
+.maindiv{
+
+padding: 0%;
+margin: 0%;
+background-color: aqua;
+margin-top:0px;
+
+}
+.plan{
+    margin-top: 0%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #2F4050;
+    
+}
+.sidebar{
+   height: auto;
+   padding: 0;
+   width: 100px;
+}
+.sidebar .row{
+
+    border-radius: 10px;
+    border: 1px solid rgb(156, 147, 147);
+    width: 245px;
+    height: 50px;
+    list-style-type: none ;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sidebar .row:hover{
+    cursor: pointer;
+    background-color: rgb(120, 146, 146);
+    border: 2px solid black;
+}
+
+
+

@@ -6,7 +6,7 @@ function Menu() {
   return (
     <div className='menu'>
       <div className='menuTitle'>
-        <h1> OUR MENU</h1>
+        <h1> Our Meals</h1>
         <div className='menuList' >
 
           {MenuList.map((menuItem,key)=>{

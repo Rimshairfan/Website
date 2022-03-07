@@ -8,12 +8,6 @@ function Navbar() {
         <div className='navbar'>
             <div className='leftSide'>
                 <img src={logo} />
-                <div className='hiddenLinks'>
-                <Link to="/">MENU</Link>
-                <Link to="/">PLANS</Link>
-                <Link to="/">CONTACT</Link>
-
-                </div>
             </div>
             <div className='rightSide'>
             <Link to="/Login">LOGIN</Link>
