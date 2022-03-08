@@ -6,6 +6,7 @@ const Sidebar = [
     {
       title:"Monday",
       link:'/monday'
+    
     },
     {
       title:"Tuesday",
@@ -32,5 +33,7 @@ const Sidebar = [
       link:'/sunday'
     }
      ]
+
+
     export default Sidebar
 

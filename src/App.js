@@ -12,6 +12,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Contact from './Contact';
 import Plan from './Plan';
+import Monday from './Monday';
 function App(){
   return(
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App(){
 <Route    path="/window" component={Window}></Route>
 <Route    path="/menu" component={Menu}></Route>
 <Route    path="/plan" component={Plan}></Route>
+{/* <Route    path="/monday" component={Monday}></Route> */}
 <Route    path="/contact" component={Contact}></Route>
 <Footer/>
 </>
