@@ -1,5 +1,4 @@
 import React from "react"
-import Plan from "./Plan"
 
 const Sidebar = [
 
@@ -17,7 +16,7 @@ const Sidebar = [
       link:'/wednesday'
     },
     {
-      title:"Thursdayy",
+      title:"Thursday",
       link:'/thursday'
     },
     {

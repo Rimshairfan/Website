@@ -1,8 +1,8 @@
 import React from 'react'
 import { MenuList } from './Menulist';
-import MenuItem from './MenuItem';
-import './Menu.css';
-function Menu() {
+import { MenuItem } from './MenuItem';
+import '../../Style/Menu.css';
+export const Menu=()=> {
   return (
     <div className='menu'>
       <div className='menuTitle'>
@@ -25,5 +25,3 @@ function Menu() {
     </div>
   )
 }
-
-export default Menu;

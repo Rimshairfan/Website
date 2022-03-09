@@ -1,9 +1,9 @@
 import React from 'react'
-import logo3 from "./Image/logo3.webp";
+import logo3 from "../Image/logo3.webp";
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
-import "./Navbar.css";
-function Navbar() {
+import "../Style/Navbar.css";
+export const Navbar=()=> {
     return (
         <div className='navbar'>
             <div className='leftSide'>
@@ -20,4 +20,3 @@ function Navbar() {
     )
 }
 
-export default Navbar

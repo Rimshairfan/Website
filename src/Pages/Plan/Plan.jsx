@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import './Plan.css'
+import '../../Style/Plan.css'
 import Sidebar from './Sidebar';
-import Meals from './Meals';
+import {Meals} from './Meals';
 
-function Plan() {
+export const Plan=()=> {
 
 
   const [day, setday] = useState('');
@@ -25,16 +25,13 @@ function Plan() {
           })}
         </ul>
         <div className='content'>
-          {day}
+          <h1 className='heading'>{day}</h1>
           <Meals/>
-          <h1>SELECT YOUR PLAN DAY</h1>
         </div>
       </div>
 
     </>
   )
 }
-
-export default Plan
 
 

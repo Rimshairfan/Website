@@ -3,9 +3,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import "./Footer.css";
+import "../Style/Footer.css";
 
-function Footer() {
+export const Footer=()=> {
   return (
     <div className="footer">
       <div className="socialMedia">
@@ -16,4 +16,3 @@ function Footer() {
   );
 }
 
-export default Footer;

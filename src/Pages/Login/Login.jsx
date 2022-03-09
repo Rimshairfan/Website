@@ -14,8 +14,8 @@ import { Form, Formik, Field, useFormik, ErrorMessage } from 'formik';
 import axios from 'axios';
 import * as Yup from 'yup';
 
-const Login = () => {
-    const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto"  }
+ export const Login = () => {
+    const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto" }
     const btnStyle = { margin: '12px 0' }
     const history = useHistory();
 
@@ -71,7 +71,7 @@ const Login = () => {
             </Grid>
             <Formik >
                 {() => (
-                    <Form onSubmit={formik.handleSubmit}  >
+                    <Form onSubmit={formik.handleSubmit} >
                         <Field as={TextField}
                             id="standard-basic"
                             name='username'
@@ -106,17 +106,17 @@ const Login = () => {
                                 label="Remember me" />
 
                         </FormGroup>
-                       
-                            <Button
-                                variant="contained"
-                                type='submit'
-                                onClick={formik.handleSubmit}
-                                name='submit'
-                                fullWidth
-                                style={btnStyle}>
-                                Sign In
-                            </Button>
-                        
+
+                        <Button
+                            variant="contained"
+                            type='submit'
+                            onClick={formik.handleSubmit}
+                            name='submit'
+                            fullWidth
+                            style={btnStyle}>
+                            Sign In
+                        </Button>
+
                     </Form>
                 )}
 
@@ -128,4 +128,3 @@ const Login = () => {
     );
 }
 
-export default Login;       

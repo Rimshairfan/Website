@@ -1,8 +1,8 @@
 import React from "react";
-import contact from "./Image/contact.jpg";
-import "./Contact.css";
+import contact from "../Image/contact.jpg";
+import "../Style/Contact.css";
 
-function Contact() {
+export const Contact=()=> {
   return (
     <div className="contact">
       <div
@@ -30,5 +30,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

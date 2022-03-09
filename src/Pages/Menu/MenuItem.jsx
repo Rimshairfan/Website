@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MenuItem({image,name,Calories,Protien,Fat}) {
+export const MenuItem=({image,name,Calories,Protien,Fat})=> {
   return (
     <div className='menuItem'>
  <div style={{ backgroundImage: `url(${image})` }}> </div>
@@ -12,5 +12,3 @@ function MenuItem({image,name,Calories,Protien,Fat}) {
     </div>
   )
 }
-
-export default MenuItem

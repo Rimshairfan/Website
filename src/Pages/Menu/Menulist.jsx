@@ -1,15 +1,15 @@
-import item1 from "./Image/item1.jpg";
-import item2 from "./Image/item2.jpg";
-import item3 from "./Image/item3.jpg";
-import item4 from "./Image/item4.jpg";
-import item5 from "./Image/item5.jpg";
-import item6 from "./Image/item6.jpg";
-import item7 from "./Image/item7.jpg";
-import item8 from "./Image/item8.jpg";
-import item9 from "./Image/item9.jpg";
-import item10 from "./Image/item10.jpg";
-import item11 from "./Image/item11.jpg";
-import item12 from "./Image/item12.jpg";
+import item1 from "../../Image/item1.jpg";
+import item2 from "../../Image/item2.jpg";
+import item3 from "../../Image/item3.jpg";
+import item4 from "../../Image/item4.jpg";
+import item5 from "../../Image/item5.jpg";
+import item6 from "../../Image/item6.jpg";
+import item7 from "../../Image/item7.jpg";
+import item8 from "../../Image/item8.jpg";
+import item9 from "../../Image/item9.jpg";
+import item10 from "../../Image/item10.jpg";
+import item11 from "../../Image/item11.jpg";
+import item12 from "../../Image/item12.jpg";
 
 
 
