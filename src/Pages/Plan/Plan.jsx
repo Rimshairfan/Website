@@ -8,6 +8,7 @@ export const Plan=()=> {
 
   const [day, setday] = useState('');
 
+  console.log("in plan ")
 
   return (
     <>

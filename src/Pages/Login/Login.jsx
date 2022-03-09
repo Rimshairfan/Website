@@ -37,7 +37,7 @@ import * as Yup from 'yup';
 
         onSubmit: (values) => {
             console.log(values);
-            history.push("/Window");
+            history.push("/home/window");
             axios.post('https://dev.muawin.com:9000/LoginWithUsername', null, {
                 params: {
                     username: values.username,

@@ -10,10 +10,10 @@ export const Navbar=()=> {
                 <img src={logo3} />
             </div>
             <div className='rightSide'>
-                <Link to="/Login">LOGIN</Link>
-                <Link to="/Menu">MENU</Link>
-                <Link to="/Plan">PLANS</Link>
-                <Link to="/Contact">CONTACT</Link>
+                <Link to="/">LOGIN</Link>
+                <Link to="/home/menu">MENU</Link>
+                <Link to="/home/plans">PLANS</Link>
+                <Link to="/home/contact">CONTACT</Link>
 
             </div>
         </div>
