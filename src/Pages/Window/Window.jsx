@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 }));
-export default function Window() {
+export const Window = ()=> {
 
     const classes = useStyles();
     return (
