@@ -17,14 +17,14 @@ function App(){
     <BrowserRouter>
     
     <>
-<Navbar/>
+{/* <Navbar/> */}
 <Route   path="/login" component={Login}></Route>
 <Route  exact  path="/window" component={Window}></Route>
 <Route    path="/menu" component={Menu}></Route>
 <Route    path="/plan" component={Plan}></Route>
 {/* <Route    path="/monday" component={Monday}></Route> */}
 <Route    path="/contact" component={Contact}></Route>
-<Footer/>
+{/* <Footer/> */}
 </>
 
 </BrowserRouter>

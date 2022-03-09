@@ -1,11 +1,9 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import { Paper } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
 import { useHistory } from "react-router-dom";
-import { Link } from 'react-router-dom';
-import { Typography } from '@mui/material';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -14,16 +12,33 @@ import { Form, Formik, Field, useFormik, ErrorMessage } from 'formik';
 import axios from 'axios';
 import * as Yup from 'yup';
 
- export const Login = () => {
-    const GridStyle = { padding: 20, height: '70vh', width: 280, margin: "20px auto" }
-    const btnStyle = { margin: '12px 0' }
+const useStyles = makeStyles(() => ({
+    root:{
+        marginLeft:600
+    },
+    field: {
+        width: 300,
+    
+    marginLeft:300
+    },
+   
+    btn:{
+    
+        margin: '12px 0',
+         margin: "20px auto"
+    }
+
+}));
+export const Login = () => {
+    // const fieldstyle = {
+    //     width: 300,
+    //     margin: "20px auto"
+    // }
+    // const GridStyle = { padding: 20, height: '70vh',  width: 300, margin: "20px auto" }
+    // const btnStyle = { margin: '12px 0', margin: "20px auto" }
     const history = useHistory();
-
+    const classes = useStyles();
     const formik = useFormik({
-
-
-
-
         initialValues: {
             username: "",
             password: ""
@@ -43,67 +58,63 @@ import * as Yup from 'yup';
                     username: values.username,
                     password: values.password
                 }
-
-
             }).then(result => {
                 console.log(result);
             }).catch(error => {
                 console.log(error)
             })
-
-
         },
-
-
-
-
-
     })
 
-
     return (
-        <Grid style={GridStyle}>
-
-            {/* <Paper elevation={10}  style={paperStyle}> */}
-            <Grid align='center'>
+        <Grid
+        //  style={GridStyle}
+        >
+            {/* //  <Paper elevation={10}  style={paperStyle}> */}
+            <Grid align='center' marginTop={10}>
                 <Avatar src=""></Avatar>
                 <h2> Sign in </h2>
             </Grid>
             <Formik >
                 {() => (
-                    <Form onSubmit={formik.handleSubmit} >
-                        <Field as={TextField}
-                            id="standard-basic"
+                    <Form onSubmit={formik.handleSubmit}  className={classes.root}>
+                        <TextField
+                            id="filled-basic" variant="filled"
                             name='username'
                             onChange={formik.handleChange}
                             values={formik.values.username}
-                            label="username"
                             placeholder='Enter Username'
-                            variant="standard"
+                            label="username"
 
-
-                            fullWidth />
-                        {
+                            className={classes.field}
+                        />
+                        {/* {
                             formik.touched.username && formik.errors.username ?
                                 <div class="error_msg">{formik.errors.username}</div> : null
-                        }
-                        <Field as={TextField}
-                            id="standard-basic"
+                        } */}
+                        <br></br>
+                        <TextField
+                            id="filled-basic" variant="filled"
                             label="Password"
                             onChange={formik.handleChange}
                             values={formik.values.password}
                             name='password'
-                            placeholder='Enter Password'
+                            className={classes.field}
+
+                            // placeholder='Enter Password'
                             type={'password'}
-                            variant="standard" fullWidth />
-                        {
+                        />
+                        {/* {
                             formik.touched.password && formik.errors.password ?
                                 <div class="error_msg">{formik.errors.password}</div> : null
-                        }
+                        } */}
                         <FormGroup>
                             <Field as={FormControlLabel}
                                 control={<Checkbox defaultChecked />}
-                                label="Remember me" />
+                                label="Remember me"
+                                className={classes.field}
+
+                            />
 
                         </FormGroup>
 
@@ -112,8 +123,9 @@ import * as Yup from 'yup';
                             type='submit'
                             onClick={formik.handleSubmit}
                             name='submit'
-                            fullWidth
-                            style={btnStyle}>
+                            className={classes.btn}
+
+                        >
                             Sign In
                         </Button>
 
@@ -121,8 +133,6 @@ import * as Yup from 'yup';
                 )}
 
             </Formik>
-
-
             {/* </Paper> */}
         </Grid>
     );
