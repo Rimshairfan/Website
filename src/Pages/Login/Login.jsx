@@ -14,18 +14,18 @@ import * as Yup from 'yup';
 
 const useStyles = makeStyles(() => ({
     root:{
-        marginLeft:600
+        marginLeft:550
     },
     field: {
-        width: 300,
+        width: 400,
     
     marginLeft:300
     },
    
     btn:{
     
-        margin: '12px 0',
-         margin: "20px auto"
+      width:400,
+
     }
 
 }));
@@ -73,7 +73,7 @@ export const Login = () => {
             {/* //  <Paper elevation={10}  style={paperStyle}> */}
             <Grid align='center' marginTop={10}>
                 <Avatar src=""></Avatar>
-                <h2> Sign in </h2>
+                <h2 align='center'> Sign in </h2>
             </Grid>
             <Formik >
                 {() => (
@@ -84,30 +84,30 @@ export const Login = () => {
                             onChange={formik.handleChange}
                             values={formik.values.username}
                             placeholder='Enter Username'
-                            label="username"
+                            // label="username"
 
                             className={classes.field}
                         />
-                        {/* {
+                        {
                             formik.touched.username && formik.errors.username ?
                                 <div class="error_msg">{formik.errors.username}</div> : null
-                        } */}
+                        }
                         <br></br>
                         <TextField
                             id="filled-basic" variant="filled"
-                            label="Password"
+                            // label="Password"
                             onChange={formik.handleChange}
                             values={formik.values.password}
                             name='password'
                             className={classes.field}
 
-                            // placeholder='Enter Password'
+                            placeholder='Enter Password'
                             type={'password'}
                         />
-                        {/* {
+                        {
                             formik.touched.password && formik.errors.password ?
                                 <div class="error_msg">{formik.errors.password}</div> : null
-                        } */}
+                        }
                         <FormGroup>
                             <Field as={FormControlLabel}
                                 control={<Checkbox defaultChecked />}
@@ -128,6 +128,8 @@ export const Login = () => {
                         >
                             Sign In
                         </Button>
+
+                        
 
                     </Form>
                 )}
