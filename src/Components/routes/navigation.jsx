@@ -31,7 +31,7 @@ const routes = {
         path: "/home/contact",
         component: Contact,
         exact: true,
-    }
+    },
   ],
   unAuth: [
     {

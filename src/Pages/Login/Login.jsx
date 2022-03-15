@@ -3,28 +3,27 @@ import Grid from '@mui/material/Grid';
 import { makeStyles } from '@mui/styles';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
-import { useHistory } from "react-router-dom";
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
 import { Form, Formik, Field, useFormik, ErrorMessage } from 'formik';
-import axios from 'axios';
-import * as Yup from 'yup';
 
+import * as Yup from 'yup';
+import { call } from '../../Store/api';
 const useStyles = makeStyles(() => ({
-    root:{
-        marginLeft:550
+    root: {
+        marginLeft: 550
     },
     field: {
         width: 400,
-    
-    marginLeft:300
+
+        marginLeft: 300
     },
-   
-    btn:{
-    
-      width:400,
+
+    btn: {
+
+        width: 400,
 
     }
 
@@ -36,7 +35,6 @@ export const Login = () => {
     // }
     // const GridStyle = { padding: 20, height: '70vh',  width: 300, margin: "20px auto" }
     // const btnStyle = { margin: '12px 0', margin: "20px auto" }
-    const history = useHistory();
     const classes = useStyles();
     const formik = useFormik({
         initialValues: {
@@ -51,19 +49,8 @@ export const Login = () => {
         }),
 
         onSubmit: (values) => {
-            console.log(values);
-            history.push("/home/window");
-            axios.post('https://dev.muawin.com:9000/LoginWithUsername', null, {
-                params: {
-                    username: values.username,
-                    password: values.password
-                }
-            }).then(result => {
-                console.log(result);
-            }).catch(error => {
-                console.log(error)
-            })
-        },
+            call(values);
+        }
     })
 
     return (
@@ -77,7 +64,7 @@ export const Login = () => {
             </Grid>
             <Formik >
                 {() => (
-                    <Form onSubmit={formik.handleSubmit}  className={classes.root}>
+                    <Form onSubmit={formik.handleSubmit} className={classes.root}>
                         <TextField
                             id="filled-basic" variant="filled"
                             name='username'
@@ -85,6 +72,7 @@ export const Login = () => {
                             values={formik.values.username}
                             placeholder='Enter Username'
                             // label="username"
+                            autoComplete='off'
 
                             className={classes.field}
                         />
@@ -128,8 +116,6 @@ export const Login = () => {
                         >
                             Sign In
                         </Button>
-
-                        
 
                     </Form>
                 )}
