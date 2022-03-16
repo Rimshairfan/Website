@@ -1,4 +1,5 @@
 import { Route, Redirect } from "react-router-dom";
+import {withRouter} from 'react-router';
 
 export const AuthRoute = (props)=> {
     const {component: Component, ...rest} = props;

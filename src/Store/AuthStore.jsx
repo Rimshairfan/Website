@@ -1,4 +1,4 @@
-import { makeObservable, observable, computed, action, flow, values } from "mobx";
+import { makeObservable, observable, action, flow} from "mobx";
 import { loginApi } from './api';
 import { store } from ".";
 
@@ -14,10 +14,10 @@ export class AuthStore {
 
     }
 
-    display = flow(function* (val) {
+    display = flow(function* (values) {
 
         try {
-            const response = yield loginApi(val);
+            const response = yield loginApi(values);
             console.log(response);
             
                 this.authorize = true;

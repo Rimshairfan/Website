@@ -7,11 +7,10 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
-import { Form, Formik, Field, useFormik, ErrorMessage } from 'formik';
+import { Form, Formik, Field, useFormik} from 'formik';
 
 import * as Yup from 'yup';
 import { store } from '../../Store';
-import { AuthStore } from '../../Store/AuthStore';
 
 const useStyles = makeStyles(() => ({
     root: {
