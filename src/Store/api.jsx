@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const call = (values) => {
+export const loginApi = (values) => {
 
     console.log(values);
 

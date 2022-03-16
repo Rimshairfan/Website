@@ -10,7 +10,9 @@ import Button from '@mui/material/Button';
 import { Form, Formik, Field, useFormik, ErrorMessage } from 'formik';
 
 import * as Yup from 'yup';
-import { call } from '../../Store/api';
+import { store } from '../../Store';
+import { AuthStore } from '../../Store/AuthStore';
+
 const useStyles = makeStyles(() => ({
     root: {
         marginLeft: 550
@@ -49,7 +51,7 @@ export const Login = () => {
         }),
 
         onSubmit: (values) => {
-            call(values);
+            store.authStore.display(values);
         }
     })
 
