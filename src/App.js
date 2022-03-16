@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Router } from "react-router-dom";
@@ -9,7 +8,6 @@ import { AuthLayout } from "./Components/AuthLayout/AuthLayout";
 import {store} from "./Store";
 function App() {
   return (
-    // <Router history={store.windowHistory.history}>
     <BrowserRouter>
       <>
         <Switch>
@@ -18,7 +16,7 @@ function App() {
         </Switch>
       </>
       </BrowserRouter>
-    // </Router>
+
   );
 }
 

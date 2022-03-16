@@ -19,10 +19,14 @@ export class AuthStore {
         try {
             const response = yield loginApi(values);
             console.log(response);
-            
+            if (response.data.Requested_Action ==  true &&  response.status==200)
+            {
                 this.authorize = true;
-                store.windowHistory.history.push("/home/window");
-            
+                window.location.href="/home/window";
+            }
+            else {
+
+            }
         } catch (error) {
             console.error(error);
         }
