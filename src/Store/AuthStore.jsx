@@ -21,6 +21,8 @@ export class AuthStore {
             console.log(response);
             if (response.data.Requested_Action ==  true &&  response.status==200)
             {
+                localStorage.setItem ("username", response.data.displayName);
+
                 this.authorize = true;
                 window.location.href="/home/window";
             }

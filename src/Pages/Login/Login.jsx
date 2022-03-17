@@ -30,6 +30,7 @@ const useStyles = makeStyles(() => ({
 
 }));
 export const Login = () => {
+
     // const fieldstyle = {
     //     width: 300,
     //     margin: "20px auto"
@@ -55,6 +56,7 @@ export const Login = () => {
     })
 
     return (
+
         <Grid
         //  style={GridStyle}
         >
@@ -71,11 +73,12 @@ export const Login = () => {
                             name='username'
                             onChange={formik.handleChange}
                             values={formik.values.username}
+
                             placeholder='Enter Username'
                             // label="username"
                             autoComplete='off'
+                            className={classes.field} 
 
-                            className={classes.field}
                         />
                         {
                             formik.touched.username && formik.errors.username ?
@@ -89,7 +92,6 @@ export const Login = () => {
                             values={formik.values.password}
                             name='password'
                             className={classes.field}
-
                             placeholder='Enter Password'
                             type={'password'}
                         />
@@ -119,6 +121,7 @@ export const Login = () => {
                         </Button>
 
                     </Form>
+
                 )}
 
             </Formik>
